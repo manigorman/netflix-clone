@@ -34,7 +34,8 @@ class TitleCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with model: String) {
-        guard let url = URL(string: model) else {return}
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model)") else {return}
+        print(url)
         DispatchQueue.global().async {
             guard let data = try? Data(contentsOf: url) else {return}
             DispatchQueue.main.async {
