@@ -1,17 +1,17 @@
 //
-//  TV.swift
+//  Movie.swift
 //  Netflix
 //
-//  Created by Igor Manakov on 26.02.2022.
+//  Created by Igor Manakov on 23.02.2022.
 //
 
 import Foundation
 
-struct TrendingTVsResponse: Codable {
-    let results: [TV]
+struct TrendingTitleResponse: Codable {
+    let results: [Title]
 }
 
-struct TV: Codable {
+struct Title: Codable {
     let id: Int
     let media_type: String?
     let original_title: String?

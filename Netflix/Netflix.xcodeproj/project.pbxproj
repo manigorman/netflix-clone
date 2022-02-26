@@ -19,9 +19,8 @@
 		C50A172227C653D4008877B8 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50A172127C653D4008877B8 /* HeroHeaderUIView.swift */; };
 		C50A172427C66C5B008877B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50A172327C66C5B008877B8 /* Assets.xcassets */; };
 		C50A172627C6A585008877B8 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50A172527C6A585008877B8 /* APICaller.swift */; };
-		C50A172827C6A917008877B8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50A172727C6A917008877B8 /* Movie.swift */; };
-		C5E2292527CAA53D00356296 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2292427CAA53D00356296 /* TV.swift */; };
-		C5E2292727CAA7D300356296 /* Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2292627CAA7D300356296 /* Upcoming.swift */; };
+		C50A172827C6A917008877B8 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50A172727C6A917008877B8 /* Title.swift */; };
+		C5E2292927CACA4100356296 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2292827CACA4100356296 /* TitleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +38,8 @@
 		C50A172127C653D4008877B8 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		C50A172327C66C5B008877B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50A172527C6A585008877B8 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
-		C50A172727C6A917008877B8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		C5E2292427CAA53D00356296 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
-		C5E2292627CAA7D300356296 /* Upcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming.swift; sourceTree = "<group>"; };
+		C50A172727C6A917008877B8 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		C5E2292827CACA4100356296 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C50A171F27C64EAF008877B8 /* CollectionViewTableViewCell.swift */,
+				C5E2292827CACA4100356296 /* TitleCollectionViewCell.swift */,
 				C50A172127C653D4008877B8 /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
@@ -120,9 +119,7 @@
 		C50A171C27C64E1B008877B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C50A172727C6A917008877B8 /* Movie.swift */,
-				C5E2292627CAA7D300356296 /* Upcoming.swift */,
-				C5E2292427CAA53D00356296 /* TV.swift */,
+				C50A172727C6A917008877B8 /* Title.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,16 +211,15 @@
 			files = (
 				C50A171727C647E5008877B8 /* SearchViewController.swift in Sources */,
 				C50A170227C64184008877B8 /* MainTabBarViewController.swift in Sources */,
-				C5E2292727CAA7D300356296 /* Upcoming.swift in Sources */,
 				C50A172027C64EAF008877B8 /* CollectionViewTableViewCell.swift in Sources */,
 				C50A172627C6A585008877B8 /* APICaller.swift in Sources */,
 				C50A172227C653D4008877B8 /* HeroHeaderUIView.swift in Sources */,
-				C5E2292527CAA53D00356296 /* TV.swift in Sources */,
 				C50A171927C64804008877B8 /* DownloadsViewController.swift in Sources */,
 				C50A16FE27C64184008877B8 /* AppDelegate.swift in Sources */,
 				C50A170027C64184008877B8 /* SceneDelegate.swift in Sources */,
 				C50A171527C647D0008877B8 /* UpcomingViewController.swift in Sources */,
-				C50A172827C6A917008877B8 /* Movie.swift in Sources */,
+				C5E2292927CACA4100356296 /* TitleCollectionViewCell.swift in Sources */,
+				C50A172827C6A917008877B8 /* Title.swift in Sources */,
 				C50A171327C647B5008877B8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
