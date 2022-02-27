@@ -18,6 +18,7 @@ class CollectionViewTableViewCell: UITableViewCell {
         layout.itemSize = CGSize(width: 140, height: 200)
         layout.scrollDirection = .horizontal
         let colletionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        colletionView.showsHorizontalScrollIndicator = false
         colletionView.register(TitleCollectionViewCell.self, forCellWithReuseIdentifier: TitleCollectionViewCell.identifier)
         
         return colletionView
