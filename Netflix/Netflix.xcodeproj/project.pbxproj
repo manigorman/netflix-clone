@@ -22,6 +22,7 @@
 		C50A172827C6A917008877B8 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50A172727C6A917008877B8 /* Title.swift */; };
 		C5E2292927CACA4100356296 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2292827CACA4100356296 /* TitleCollectionViewCell.swift */; };
 		C5E2292B27CB5C1A00356296 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2292A27CB5C1A00356296 /* TitleTableViewCell.swift */; };
+		C5E2292D27CB960500356296 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2292C27CB960500356296 /* SearchResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C50A172727C6A917008877B8 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		C5E2292827CACA4100356296 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		C5E2292A27CB5C1A00356296 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		C5E2292C27CB960500356296 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				C50A171227C647B5008877B8 /* HomeViewController.swift */,
 				C50A171427C647D0008877B8 /* UpcomingViewController.swift */,
 				C50A171627C647E5008877B8 /* SearchViewController.swift */,
+				C5E2292C27CB960500356296 /* SearchResultsViewController.swift */,
 				C50A171827C64804008877B8 /* DownloadsViewController.swift */,
 			);
 			path = Controllers;
@@ -209,6 +212,7 @@
 				C5E2292B27CB5C1A00356296 /* TitleTableViewCell.swift in Sources */,
 				C50A172027C64EAF008877B8 /* CollectionViewTableViewCell.swift in Sources */,
 				C50A172627C6A585008877B8 /* APICaller.swift in Sources */,
+				C5E2292D27CB960500356296 /* SearchResultsViewController.swift in Sources */,
 				C50A172227C653D4008877B8 /* HeroHeaderUIView.swift in Sources */,
 				C50A171927C64804008877B8 /* DownloadsViewController.swift in Sources */,
 				C50A16FE27C64184008877B8 /* AppDelegate.swift in Sources */,

@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Hello"
         view.backgroundColor = .systemBackground
         view.addSubview(homeFeedTable)
         
@@ -44,6 +44,7 @@ class HomeViewController: UIViewController {
     }
     
     private func configureNavBar() {
+        title = "Privet"
         var image = UIImage(named: "netflixLogo")
         image = image?.withRenderingMode(.alwaysOriginal)
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
