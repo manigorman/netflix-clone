@@ -2,7 +2,7 @@
 //  YouTubeSearchResponse.swift
 //  Netflix
 //
-//  Created by Igor Manakov on 28.02.2022.
+//  Created by Igor Manakov on 02.03.2022.
 //
 
 import Foundation

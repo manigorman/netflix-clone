@@ -61,8 +61,26 @@ class TitlePreviewViewController: UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(overviewLabel)
         view.addSubview(downloadButton)
-        
+        navigationController?.hidesBarsOnTap = false
         setConstraints()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.hidesBarsOnSwipe = false
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.hidesBarsOnSwipe = true
+    }
+    
+    //MARK: - Setup
+    
+    private func setupViews() {
         
     }
     
@@ -98,6 +116,10 @@ class TitlePreviewViewController: UIViewController {
         NSLayoutConstraint.activate(titleLabelConstraints)
         NSLayoutConstraint.activate(overviewLabelConstraints)
         NSLayoutConstraint.activate(downloadButtonConstraints)
+    }
+    
+    private func setupDelegate() {
+        
     }
     
     func configure(with model: TitlePreviewModel) {

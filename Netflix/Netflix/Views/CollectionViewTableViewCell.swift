@@ -36,7 +36,6 @@ class CollectionViewTableViewCell: UITableViewCell {
         contentView.backgroundColor = .systemPink
         contentView.addSubview(collectionView)
         
-        
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -58,6 +57,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     }
     
     private func downLoadTitleAt(indexPath: IndexPath) {
+        
         print("Downloading \(titles[indexPath.row].original_title)")
     }
 

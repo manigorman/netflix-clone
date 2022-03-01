@@ -14,4 +14,18 @@ class DownloadsViewController: UIViewController {
 
         view.backgroundColor = .systemBackground
     }
+    
+    //MARK: - Setup
+    
+    private func setupViews() {
+        
+    }
+    
+    private func setConstraints() {
+        
+    }
+    
+    private func setupDelegate() {
+        
+    }
 }
