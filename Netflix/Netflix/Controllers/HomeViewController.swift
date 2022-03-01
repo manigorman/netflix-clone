@@ -17,6 +17,10 @@ enum Sections: Int {
 
 class HomeViewController: UIViewController {
     
+    private var randomTrendingMovie: Title?
+    
+    private var headerView: HeroHeaderUIView?
+    
     let sectionTitles: [String] = ["Trending Movies", "Trending TV", "Popular", "Upcoming Movies", "Top Rated"]
     
     private let homeFeedTable: UITableView = {
@@ -35,15 +39,21 @@ class HomeViewController: UIViewController {
         
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
+        
         configureNavBar()
+        configureHeaderView()
         
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
-        
-        APICaller.shared.getMovie(with: "Harry Potter") { result in
+    }
+    
+    private func configureHeaderView() {
+        APICaller.shared.getTrendingMovies { [weak self] result in
             switch result {
-            case .success(let result):
-                print(result)
+            case .success(let titles):
+                let selectedTitle = titles.randomElement()
+                self?.randomTrendingMovie = selectedTitle
+                self?.headerView?.configure(with: TitleModel(titleName: selectedTitle?.original_title ?? selectedTitle?.original_name ?? "Unknown", posterURL: selectedTitle?.poster_path ?? ""))
             case .failure(let error):
                 print(error)
             }
@@ -167,6 +177,7 @@ extension HomeViewController: CollectionViewTableViewCellDelegate {
             let vc = TitlePreviewViewController()
             vc.configure(with: model)
             self?.navigationController?.pushViewController(vc, animated: true)
+//            self?.present(vc, animated: true, completion: nil)
         }
     }
 }
